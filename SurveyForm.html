@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Survey Form</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Covid Survey Form</h1>
+            <p id="description">Thank you for taking the time to let us know your status</p>
+        </header>
+    
+        <form id="survey-form">
+            <div class="survey-group">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-control" type="text" name="user-name" id="name" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="survey-group">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-control" type="email" name="user-email" id="email" placeholder="Enter your email" required>
+            </div>
+    
+            <div class="survey-group">
+                <label id="number-label" for="number">Age <i>(optional)</i></label>
+                <input class="form-control" type="number" name="user-age" id="number" placeholder="Age" min="1" max="99">
+            </div>
+    
+            <div class="survey-group">
+                <p>Which option best describes your job?</p>
+                <select class="form-control" name="user-job" id="dropdown" required>
+                    <option disabled selected>Select your job</option>
+                    <option value="student">Student</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                    <option value="preferNo">Prefer not to say</option>
+                </select>
+            </div>
+    
+            <div class="survey-group">
+                <p>Have you been to Covid affected areas in the last 2 weeks?</p>
+                <label>
+                    <input type="radio" name="yes-no" value="yes" checked>Yes
+                </label>
+                <label>
+                    <input type="radio" name="yes-no" value="no">No
+                </label>
+            </div>
+    
+            <div class="survey-group">
+                <p>Do you have any of the following symptoms? <i>(Check all that appied)</i></p>
+                <label>
+                    <input type="checkbox" name="symptoms" value="coughing">Coughing
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="sneezing">Sneezing
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="headache">Having a headache
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="fever">Having a fever
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="hard-breathe">Having difficulties in breathing
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="dizzy">Feeling dizzy
+                </label>
+                <label>
+                    <input type="checkbox" name="symptoms" value="no">No
+                </label>
+            </div>
+    
+            <div class="survey-group">
+                <p>Do you think we need to stay at home or not? Why?</p>
+                <textarea class="form-control" name="user-thought" id="comments" placeholder="Enter your thoughts here"></textarea>
+            </div>
+    
+            <div class="survey-group">
+                <button id="submit" class="form-control" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
