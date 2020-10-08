@@ -16,7 +16,7 @@ body {
 #navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 #navbar ul {
   display: flex;
@@ -80,6 +80,7 @@ body {
   border-bottom: 3px solid white;
 }
 #projects a {
+  text-decoration: none;
   display: inline-grid;
   margin: 20px 20px;
   width: 350px;
@@ -113,11 +114,13 @@ body {
   height: 100vh;
 }
 #contact h2 {
+  width: 100vw;
   font-size: 45px;
   font-weight: 500;
   /* margin-bottom: 10px; */
 }
 #contact p {
+  width: 100vw;
   margin-bottom: 70px;
 }
 #contact ul {
@@ -146,5 +149,8 @@ body {
   #navbar ul {
     display: block;
     text-align: center;
+  }
+  #contact ul {
+    display: block;
   }
 }
